@@ -8,14 +8,14 @@
 
         static void Main()
         {
-            List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };
+            var numbers = new List<int> { 1, 2, 3, 4, 5 };
 
             Console.WriteLine("Items :  " + string.Join(", ", numbers));
 
-            List<int> doubledNumbers = ProcessNumbers(numbers, Double);
+            var doubledNumbers = ProcessNumbers(numbers, Double);
             Console.WriteLine("Doubled: " + string.Join(", ", doubledNumbers));
 
-            List<int> squaredNumbers = ProcessNumbers(numbers, Square);
+            var squaredNumbers = ProcessNumbers(numbers, Square);
             Console.WriteLine("Squared: " + string.Join(", ", squaredNumbers));
         }
         static List<int> ProcessNumbers(List<int> numbers, Func<int, int> operation)
